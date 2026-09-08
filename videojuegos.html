@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registro torneo de videojuegos </title>
+    </head>
+    <body>
+        <form action="videojuegos.html" method="post">
+            <table border="2" cellpadding= "7">
+            <tr>
+                <td> Nombre del jugador: </td>
+                <td><input type="text" id="nombre" name="nombre" required minlength="3" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td> Correo: </td>
+                <td><input type="email" id="correo" name="correo" ></td>
+            </tr>
+            <tr>
+                <td> Edad: </td>
+                <td><input type="number" id="edad" name="edad" min="12" max="40" ></td>
+            </tr>
+            <tr>
+                <td> Nickname: </td>
+                <td><input type="text" id="nombre" name="nombre" required pattern="[A-Za-z0-9]+"></td>
+            </tr>
+            <tr>
+                <td> Categoría: </td>
+                <td><input type="radio" id="principiante" name="categoria" value="principiante">
+                <label for="principiante">Principiante</label>
+
+                <input type="radio" id="intermedio" name="categoria" value="intermedio">
+                <label for="intermedio">Intermedio</label>
+
+                <input type="radio" id="experto" name="categoria" value="experto">
+                <label for="experto">Experto</label>
+
+                </td>
+                
+            </tr>
+            <tr>
+                <td> Juegos favoritos: </td>
+                <td>
+                    <input type="checkbox" id="" name="FIFA" value="FIFA">
+                    <label for="musica">FIFA</label>
+                    <input type="checkbox" id="LoL" name="intereses" value="LoL">
+                    <label for="deporte">LoL</label>
+                    <input type="checkbox" id="Minecraft" name="intereses" value="Minecraft">
+                    <label for="lectura">Minecraft</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Fecha inscripción: </td>
+                <td><input type="date" id="fecha" name="fecha" min="2025-01-01" max="2025-12-31"></td>
+            </tr>
+            <tr>
+            <td colspan="2" style="text-align: center;">
+                <input  type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </td>
+            
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
